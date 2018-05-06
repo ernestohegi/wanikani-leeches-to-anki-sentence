@@ -1,0 +1,7 @@
+const API_V2_TOKEN = 'XXX';
+const SESSION_TOKEN = '_wanikani_session=XXX';
+
+module.exports = {
+    API_V2_TOKEN,
+    SESSION_TOKEN
+}
