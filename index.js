@@ -31,11 +31,11 @@ const getItemsInfo = (items, apiV2Token, sessionToken, callEndCallback) => {
             if (item && item.sentences && item.sentences[0]) {
                 console.log(subject.data.slug);
 
-                file.write(
-                    subject.data.slug + '\t' +
-                    item.sentences[0].join('\t') +
-                    '\n'
-                );
+                file.write(`
+                    ${subject.data.slug}\t
+                    ${item.sentences[0].join('\t')}
+                    \n
+                `);
             }
         })
         .then(() => getItemsInfo(items, apiV2Token, sessionToken, callEndCallback));
